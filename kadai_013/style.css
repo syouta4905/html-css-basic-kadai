@@ -1,0 +1,87 @@
+/* PC用ナビゲーションのスタイル */
+#nav-pc {
+  display: frex; /* PC用のナビゲーションのレイアウトを指定　*/
+  justify-content: space-between; /*　要素を均等に配置　*/
+}
+
+/* SP用ナビゲーションのスタイル */
+#menu-sp {
+  float: right;
+  padding: 0;
+}
+
+/* スマートフォン用ナビゲーションのスタイル */
+#nav-sp {
+  background-color: #ce933e;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: none;
+  z-index: 100;
+}
+
+#nav-sp ul {
+  padding-left: 0;
+}
+
+#nav-sp li {
+  list-style: none;
+}
+
+#close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+#logo-sp {
+  margin: 80px 0px 30px 20px;
+}
+
+#nav-sp a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#nav-sp a.menu {
+  margin: 0 20px;
+  height: 44px;
+  font-size: 16px;
+  background-image: url("images/arrow.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+#nav-sp a:hover,
+#nav-sp a:active,
+#nav-sp a:link,
+#nav-sp a:visited {
+  color: #ffffff;
+}
+
+/* SP用のメディアクエリ */
+@media screen and (max-width: 767px) {
+  body {
+      min-width: 375px;
+      margin: 0;
+  }
+
+  #nav-pc {
+      display: none;
+  }
+
+  #menu-sp {
+      display: block;
+  }
+}
+
+/* PC用のメディアクエリ */
+@media screen and (min-width: 768px) {
+  #menu-sp,
+  #nav-sp {
+      display: none;
+  }
+}
