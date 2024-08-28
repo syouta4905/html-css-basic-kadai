@@ -1,0 +1,129 @@
+/*共通スタイル*/
+body{
+  font-family: 'Arial',  sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #b37742;
+}
+
+.logo{
+  width: 150px;
+}
+
+#menu-open{
+  width: 30px;
+  cursor: pointer;
+}
+
+h1{
+  font-size: 24px;
+  color: #333;
+  padding: 20px;
+}
+
+p{
+  font-size: 16px;
+  color: #666;
+  padding: 0 20px;
+}
+
+/* PC用ナビゲーション*/
+#nav-pc ul{
+  display: flex;
+  justify-content: flex-end;
+  background-color: white;
+  padding: 10px 0;
+  margin: 0;
+}
+
+#nav-pc ul li a{
+  color: #333;
+  text-decoration: nome;
+  font-size: 16px;
+}
+
+#nav-pcul li a:hover{
+text-decoration: underline;
+}
+
+/*SP用ナビゲーション*/
+#nav-sp{
+  display: nome;
+  background-color: #b37742;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  padding: 20px;
+}
+
+#nav-sp img#close{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  cursor: pointer;
+}
+
+#nav-sp a{
+  display: block;
+  padding: 20px;
+  text-decoration: nome;
+  color: #fff;
+  text-align: left;
+}
+
+#nav-sp a.menu{
+  padding-left: 20px;
+}
+
+#nav-sp a:hover{
+  text-decoration: underline;
+}
+
+/* メインイメージ */
+.main-image{
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
+
+/* メディアクエリ */
+@media screen and (max-width: 767px) {
+  #nav-pc{
+    display: nome;
+  }
+
+  #menu-open{
+    display: block;
+  }
+
+  #nav-sp{
+    display: block;
+  }
+
+  @media  screen and (min-width:768px) {
+   #menu-open{
+    display: nome;
+   }
+    
+   #nav-sp{
+    display: nome;
+   }
+
+   #nav-pc{
+    display: flex;
+   } 
+  }
+  }
