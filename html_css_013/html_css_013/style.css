@@ -1,0 +1,11 @@
+/* PC スマホ共通スタイル */
+body{
+  min-width: 375px;
+  margin: 0 auto 0 auto;
+}
+
+/* ヘッダー */
+ header{
+  display: flex;
+  justify-content: space-between;
+ }
