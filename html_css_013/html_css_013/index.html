@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html>
 <head>
   <meta charset="UTF-8">
+  <meta name="description" content="自家焙煎のコーヒーがお家で楽しめるOrganic Cafe"/>
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Oranic Cafe</title>
 <link rel="stylesheet"href="style.css">
@@ -10,40 +11,44 @@
 <body>
   <!-- ヘッダー -->
    <header>
-    <div class="header-contaner">
-      <img src="images/logo.png" alt="Organic Cafe"class="logo">
-      <img src="images/button-menu.png" alt="メニューを開く" id="menu-open"
-      onclick="document.getElementByld('nav-sp').styledisplay='block'">
-    </div>
-   </header>
-
+    <!-- ロゴ -->
+     <a href="index.html" id="logo"><img src="images/logo.png" alt="トップページに戻る"/></a>
+  
    <!-- PC用ナビゲーション -->
     <nav id="nav-pc">
-    <ul>
-      <li><a href="#concept">CONCEPT</a></li>
-      <li><a href="#product">PRODUCT</a></li>
-      <li><a href="contact">CONTACT</a></li> 
-    </ul>
+    <a href="#concept">CONCEPT</a>
+    <a href="#product">PRODUCT</a>
+    <a href="contact">CONTACT</a> 
   </nav> 
 
-    <!-- SP用ナビゲーション -->
-    <nav id="nav-sp" style="display: none;">
-      <img id="close" src="images/button-close.png" alt="ナビゲーションを閉じる" onclick="document.getElementById('nav-sp').style.display = 'none'">
-      <a id="logo-sp" href="index.html" onclick="document.getElementById('nav-sp').style.display = 'none'">
-          <img src="images/logo-sp.png" alt="トップページに戻る">
-      </a>
-      <a class="menu" href="#concept" onclick="document.getElementById('nav-sp').style.display = 'none'">CONCEPT</a>
-      <a class="menu" href="#product" onclick="document.getElementById('nav-sp').style.display = 'none'">PRODUCT</a>
-      <a class="menu" href="#contact" onclick="document.getElementById('nav-sp').style.display = 'none'">CONTACT</a>
+  <!-- SP用ナビゲーション -->
+  <nav id="nav-sp" style="display: none;">
+    <img id="close" src="images/button-close.png" alt="ナビゲーションを閉じる" onclick="document.getElementById('nav-sp').style.display = 'none'">
+    <a id="logo-sp" href="index.html" onclick="document.getElementById('nav-sp').style.display = 'none'">
+        <img src="images/logo-sp.png" alt="トップページに戻る">
+    </a>
+    <a class="menu" href="#concept" onclick="document.getElementById('nav-sp').style.display = 'none'">CONCEPT</a>
+    <a class="menu" href="#product" onclick="document.getElementById('nav-sp').style.display = 'none'">PRODUCT</a>
+    <a class="menu" href="#contact" onclick="document.getElementById('nav-sp').style.display = 'none'">CONTACT</a>
   </nav>
+  </header>
 
+    
+  
+
+
+  <main>
+    <article>
+     <!-- メインビジュアル -->
+     <section id="main-visual">
+      <div class="main-message">
+        <h1>Organic Cafe</h1>
+        <p>自家焙煎コーヒーが買えるお店</p>
+      </div>
+        <img src="images/main-image.jpg" alt="メインイメージ">
+     </section>
+    </article>
+  </main>
   <!-- メインコンテンツ -->
-   <main>
-    <section id="concept">
-      <h1>Organic Cofe</h1>
-      <p>自家焙煎コーヒーが買えるお店</p>
-      <img src="images/main-image.jpg" alt="メインイメージ" class="main-image">
-    </section>
-   </main>
 </body>
 </html>
