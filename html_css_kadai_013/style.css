@@ -1,0 +1,104 @@
+/* PC、スマホ共通スタイル */
+body {
+  margin: 0 auto 0 auto;
+    font-family: "Source Sans Pro", "Hiragino Kaku Gothic ProN", Meiryo, Arial, sans-serif;
+ }
+ 
+ /* ヘッダー */
+ header {
+   display: flex;
+   justify-content: space-between;
+ }
+
+/* メイン画像 */
+#main-visual img{
+ width: 100%;
+ heigt: auto;
+ display: block;
+}
+
+/* ナビゲーションのレイアウト */
+  #nav-pc {
+    font-size: 14px;
+  }
+  
+  #nav-pc ul {
+    display: flex;
+    padding-left: 0;
+  }
+  
+  #nav-pc li　 {
+    list-style: none;
+  }
+  
+  /* ナビゲーションのリンクの装飾設定 */
+  #nav-pc a {
+    text-decoration: none;
+    margin-left: 20px;
+    color: #0d0d0d;
+  }
+  
+  #nav-pc a:hover {
+    text-decoration: underline;
+  }
+
+
+  /* PC用ナビゲーション */
+#nav-pc {
+   /* PC用ナビゲーションのスタイルをここに追加 */
+}
+/* SP用ナビゲーションの初期スタイル */
+#nav-sp {
+   position: fixed;
+   top: 0;
+   right: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.8);
+   display: none;
+   z-index: 9999;
+}
+#nav-sp img#close {
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   width: 30px;
+   cursor: pointer;
+}
+#nav-sp a#logo-sp img {
+   display: block;
+   margin: 20px auto;
+   width: 150px;
+}
+#nav-sp a.menu {
+   display: block;
+   color: white;
+   text-align: center;
+   padding: 15px 0;
+   font-size: 18px;
+   text-decoration: none;
+}
+#hamburger-icon {
+   display: none;
+   width: 30px;
+   cursor: pointer;
+}
+/* メディアクエリ：スマートフォン向けレイアウト */
+@media screen and (max-width: 767px) {
+   #hamburger-icon {
+       display: block;
+       position: absolute;
+       top: 10px;
+       right: 10px;
+       z-index: 9999;
+   }
+   #nav-pc {
+       display: none;
+   }
+}
+/* メディアクエリ：PC向けレイアウト */
+@media screen and (min-width: 768px) {
+   #nav-sp {
+       display: none;
+   }
+}
