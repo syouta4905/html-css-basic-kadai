@@ -23,9 +23,9 @@
        }
        // ソートする配列を宣言
        $nums = [15, 4, 18, 23, 10];
-       echo "昇順ソート<br>";
+       echo "昇順にソートします。<br>";
        sort_2way($nums, true); // 昇順ソート
-       echo "<br>降順ソート<br>";
+       echo "<br>降順にソートします。<br>";
        sort_2way($nums, false); // 降順ソート
        ?>
 </p>
