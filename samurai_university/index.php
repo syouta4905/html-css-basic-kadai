@@ -7,9 +7,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="description" content="samurai university" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" type="text/css" href="/styles/bootstrap4/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css" />
   <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" type="text/css" href="/styles/main_styles.css" />
+  <link rel="stylesheet" type="text/css" href="styles/main_styles.css" />
 </head>
 
 <body>
@@ -20,14 +20,12 @@
         <div class="">
           <nav class="navbar navbar-expand-lg">
             <div class="logo_container">
-              <a href="index.php">
-                <div class="logo_text">
-                  <a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
-                    <img src="images/logo_big.png" />
-                    <span>Samurai University</span>
-                  </a>
-                </div>
-              </a>
+              <div class="logo_text">
+                <a href="index.html">
+                  <img src="images/logo_big.png" />
+                  <span>Samurai University</span>
+                </a>
+              </div>
             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
               aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -149,38 +147,38 @@
     <div class="news">
       <div class="footer_row">
         <div class="row news_row">
+          <!-- ニュース -->
           <div class="col-lg-6 col-md-6 col-sx-12 news_col">
-            <!-- ニュース -->
             <div class="home_title">News</div>
             <div class="home_title_sub">ニュース</div>
             <div class="news_post_small">
               <div class="news_post_meta">
                 <ul>
-                  <li><a href="">2022/05/02</a></li>
+                  <li><a href="news_detail.html">2022/05/02</a></li>
                 </ul>
               </div>
               <div class="news_post_small_title">
-                <a href="">公開講座「UnityでつくるiOSアプリ」受講生募集</a>
+                <a href="news_detail.html">公開講座「UnityでつくるiOSアプリ」受講生募集</a>
               </div>
             </div>
             <div class="news_post_small">
               <div class="news_post_meta">
                 <ul>
-                  <li><a href="">2022/05/02</a></li>
+                  <li><a href="news_detail.html">2022/05/02</a></li>
                 </ul>
               </div>
               <div class="news_post_small_title">
-                <a href="">新規カリキュラム「Pythonコース」登場!</a>
+                <a href="news_detail.html">新規カリキュラム「Pythonコース」登場!</a>
               </div>
             </div>
             <div class="news_post_small">
               <div class="news_post_meta">
                 <ul>
-                  <li><a href="">2022/05/02</a></li>
+                  <li><a href="news_detail.html">2022/05/02</a></li>
                 </ul>
               </div>
               <div class="news_post_small_title">
-                <a href="">新規カリキュラム「Pythonコース」登場!</a>
+                <a href="news_detail.html">新規カリキュラム「Pythonコース」登場!</a>
               </div>
             </div>
           </div>
@@ -204,7 +202,7 @@
                 </div>
                 <div class="col-lg-9 col-md-8 col-sx-12">
                   <div class="news_post_small_title">
-                    <a href="">AWSハンズオンセミナー</a>
+                    <a href="events_detail.html">AWSハンズオンセミナー</a>
                   </div>
                   <div class="news_post_content">
                     10月8日　新宿〇〇ビル8Fにて、AWSハンズオンセミナーを開催します。AWSを実際に構築してみます。参加希望者は...
@@ -226,11 +224,11 @@
                 </div>
                 <div class="col-lg-9 col-md-8 col-sx-12">
                   <div class="news_post_small_title">
-                    <a href="">Raspberry Piハンズオンセミナー</a>
+                    <a href="events_detail.html">Raspberry Piハンズオンセミナー</a>
                   </div>
                   <div class="news_post_content">
-                    11月15日　新宿〇〇ビル8Fにて、Paspberry
-                    Piｗ使った、センサーを利用した自動走行ハンズオンセミナーを開催し...
+                    11月15日　新宿〇〇ビル8Fにて、Raspberry
+                    Piを使った、センサーを利用した自動走行ハンズオンセミナーを開催し...
                   </div>
                 </div>
               </div>
@@ -261,7 +259,7 @@
               </div>
               <div class="course_body">
                 <h3 class="course_title">
-                  <a href="">教育学部</a>
+                  <a href="courses_detail.html">教育学部</a>
                 </h3>
                 <div class="course_text">
                   <p>
@@ -283,7 +281,7 @@
               </div>
               <div class="course_body">
                 <h3 class="course_title">
-                  <a href="">理工学部</a>
+                  <a href="courses_detail.html">理工学部</a>
                 </h3>
                 <div class="course_text">
                   <p>
@@ -304,7 +302,7 @@
                 <img src="images/pic6-4.jpg" alt="" />
               </div>
               <div class="course_body">
-                <h3 class="course_title"><a href="">法学部</a></h3>
+                <h3 class="course_title"><a href="courses_detail.html">法学部</a></h3>
                 <div class="course_text">
                   <p>複雑な社会現象を考察する、法律学科と政治学科</p>
                 </div>

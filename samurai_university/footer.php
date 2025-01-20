@@ -1,5 +1,5 @@
-    <!-- footer.php ここから -->
-    <footer class="footer">
+ <!-- footer.php ここから -->
+ <footer class="footer">
       <div class="row footer_row">
         <div class="col">
           <div class="footer_content">
@@ -7,18 +7,17 @@
               <div class="col-lg-4 footer_col">
                 <div class="footer_section footer_about">
                   <div class="footer_logo_container">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/logo_big.png" alt="" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/logo_big.png" alt="" />
                     <a href="">
                       <div class="footer_logo_text">Samurai University</div>
                     </a>
                   </div>
-
                   <div class="footer_contact_info">
-                    <div>〒101-0022</div>
-                    <div>東京都千代田区神田練塀町300番地 住友不動産秋葉原駅前ビル5F</div>
+                    <div>〒150-0043</div>
+                    <div>東京都渋谷区道玄坂2丁目11-1 Gスクエア渋谷道玄坂4F</div>
                     <ul>
-                      <li><span>TEL: </span>03-1234-5678</li>
-                      <li><span>MAIL: </span>: samurai@example.com</li>
+                      <li><span>TEL: </span>03-2222-11</li>
+                      <li><span>MAIL: </span>: sample@sejuku.net</li>
                     </ul>
                   </div>
                   <div class="footer_social">
@@ -27,7 +26,8 @@
                         <a href="https://twitter.com/samuraijuku"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                       </li>
                       <li>
-                        <a href="https://www.facebook.com/sejuku2013/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="https://www.facebook.com/sejuku2013/"><i class="fa fa-facebook"
+                            aria-hidden="true"></i></a>
                       </li>
                     </ul>
                   </div>
@@ -37,7 +37,7 @@
                 <div class="footer_section footer_links">
                   <div class="footer_links_container">
                     <ul>
-                      <li><a href="<?php echo home_url(); ?>/category/news">ニュース</a></li>
+                    <li><a href="<?php echo home_url(); ?>/category/news">ニュース</a></li>
                       <li><a href="<?php echo home_url(); ?>/category/event">イベント</a></li>
                       <li><a href="<?php echo home_url(); ?>/course">コース</a></li>
                       <li><a href="<?php echo home_url(); ?>/about_us">侍大学について</a></li>
@@ -46,7 +46,8 @@
                 </div>
               </div>
               <div class="col-lg-5 footer_col clearfix">
-                <a class="twitter-timeline" data-height="265" href="https://twitter.com/samuraijuku?ref_src=twsrc%5Etfw">Tweets by samuraijuku</a>
+                <a class="twitter-timeline" data-height="265"
+                  href="https://twitter.com/samuraijuku?ref_src=twsrc%5Etfw">Tweets by samuraijuku</a>
                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
               </div>
             </div>
@@ -63,19 +64,19 @@
         </div>
       </div>
     </footer>
-    </div>
+  </div>
 
-    <!--jQuery-->
-    <script src="<?php echo get_template_directory_uri(); ?>/js/jquery-3.2.1.min.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/styles/bootstrap4/popper.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/styles/bootstrap4/bootstrap.min.js"></script>
+  <!--jQuery-->
+  <script src="<?php echo get_template_directory_uri(); ?>/js/jquery-3.2.1.min.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/styles/bootstrap4/popper.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/styles/bootstrap4/bootstrap.min.js"></script>
 
-    <script type="text/javascript">
-      $(".carousel").carousel();
-    </script>
+  <script type="text/javascript">
+    $(".carousel").carousel();
+  </script>
 
-    <?php wp_footer(); ?>
-    </body>
+<?php wp_footer(); ?>
+</body>
 
-    </html>
-    <!-- footer.php ここまで -->
+</html>
+<!-- footer.php ここまで -->

@@ -1,4 +1,4 @@
-    <?php get_header(); ?>
+<?php get_header(); ?>
     <!-- Home -->
 
     <div class="home">
@@ -13,6 +13,7 @@
     </div>
 
     <!-- Course -->
+
     <div class="course">
       <div class="row content-body">
         <!-- Course -->
@@ -23,6 +24,8 @@
               <!-- Description -->
               <div class="tab_panel">
                 <div class="tab_panel_title"><?php the_title(); ?></div>
+                <div class="tab_panel_header">
+                </div>
                 <div class="tab_panel_content">
                   <div class="course_image">
                     <?php the_post_thumbnail(); ?>
@@ -52,5 +55,4 @@
         </div>
       </div>
     </div>
-
-    <?php get_footer(); ?>
+     <?php get_footer(); ?>

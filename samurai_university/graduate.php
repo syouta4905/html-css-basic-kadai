@@ -33,6 +33,8 @@
                 <div class="tab_panel_content">
                   <div class="tab_panel_text">
                     <!-- news loop from here-->
+
+                
                     <?php if (have_posts()) : ?>
                       <?php while(have_posts()) : the_post(); ?>
                       <div class="news_posts_small">

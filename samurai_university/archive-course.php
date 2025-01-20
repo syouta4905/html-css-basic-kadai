@@ -1,29 +1,29 @@
 <?php get_header(); ?>
-<!-- Home -->
+    <!-- Home -->
 
-<div class="home">
-  <div class="breadcrumbs_container">
-    <div class="image_header">
-      <div class="header_info">
-        <div>Courses</div>
-        <div>コース</div>
+    <div class="home">
+      <div class="breadcrumbs_container">
+        <div class="image_header">
+          <div class="header_info">
+            <div>Courses</div>
+            <div>コース</div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
 
-<!-- Courses -->
+    <!-- Courses -->
 
-<div class="courses">
-  <div class="footer_row">
-    <div class="row">
-      <div class="col-lg-12">
-        <p class="title">コース</p>
-        <div class="courses_container">
-          <div class="row courses_row">
-            <!-- Course -->
-            <?php if (have_posts()) : ?>
-              <?php while (have_posts()) : the_post() ?>
+    <div class="courses">
+      <div class="footer_row">
+        <div class="row">
+          <div class="col-lg-12">
+            <p class="title">コース</p>
+            <div class="courses_container">
+              <div class="row courses_row">
+                <!-- Course -->
+                <?php if (have_posts()) : ?>
+                 <?php while (have_posts()) : the_post() ?>
                 <div class="col-lg-4 course_col">
                   <div class="course">
                     <div class="course_image">
@@ -46,12 +46,13 @@
                     </div>
                   </div>
                 </div>
-              <?php endwhile; ?>
-            <?php endif; ?>
+                <?php endwhile; ?>
+                <?php endif; ?>
+                
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
-<?php get_footer(); ?>
+    <?php get_footer(); ?>

@@ -1,4 +1,4 @@
-    <?php get_header(); ?>
+<?php get_header(); ?>
     <!-- Home -->
 
     <div class="home">
@@ -23,13 +23,15 @@
               <!-- Description -->
               <div class="tab_panel">
                 <div class="tab_panel_title">検索結果</div>
+                <div class="tab_panel_header">
+                </div>
                 <div class="tab_panel_content">
                   <div class="tab_panel_text">
-                    <!-- news loop from here-->
-                    <?php if (have_posts() && get_search_query()) :
-                        while (have_posts()) :
-                       the_post(); ?>
-                      <div class="news_posts_small">
+                    <!-- news loop from here -->
+                     <?php if (have_posts() && get_search_query()) :
+                      while (have_posts()) :
+                        the_post(); ?>
+                        <div class="news_posts_small">
                       <div class="row">
                         <div class="col-lg-2 col-md-2 col-sx-12">
                           <div class="calendar_news_border">
@@ -87,7 +89,6 @@
                       <p>検索キーワードに該当する記事がありませんでした。</p>
                     <?php endif; ?>
                     <!-- news loop until here-->
-
                   </div>
                 </div>
               </div>
@@ -101,4 +102,4 @@
         </div>
       </div>
     </div>
-    <?php get_footer( ); ?>
+     <?php get_footer(); ?>
